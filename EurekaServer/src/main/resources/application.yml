@@ -1,6 +1,6 @@
 eureka:
   instance:
-   hostname: localhost
+   hostname: shashank-HP-Notebook
    port: 8761
 
   client:
