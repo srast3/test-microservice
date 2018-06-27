@@ -8,10 +8,12 @@ spring:
           uri: https://github.com/srast3/test-microservice.git
           search-paths:
             - "EmailServiceConfigProperties/{application}/{profile}"
-#eureka:
+eureka:
 #  instance:
 #    hostname: config-server
-#  client:
-#    registryFetchIntervalSeconds: 1
-#    serviceUrl:
-#      defaultZone: http://discovery-service:8761/eureka/
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    registryFetchIntervalSeconds: 1
+    serviceUrl:
+      defaultZone: http://shashank-HP-Notebook:8761/eureka/

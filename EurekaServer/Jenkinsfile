@@ -14,7 +14,9 @@
             env.version = pom.version
         }
 
-
+		stage ('Final') {
+            build job: 'config-server-pipeline', wait: false
+        }     
     }
 
 }
