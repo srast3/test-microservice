@@ -1,6 +1,4 @@
- using hostname.
-
-node {
+ node {
 
     withMaven(maven:'maven') {
 
