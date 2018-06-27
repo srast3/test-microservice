@@ -56,9 +56,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<executions>
-					<goals>
-						<goal>repackage</goal>
-					</goals>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
 				</executions>
 			</plugin>
 		</plugins>
