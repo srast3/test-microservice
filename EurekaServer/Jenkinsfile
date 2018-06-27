@@ -14,7 +14,12 @@
             env.version = pom.version
         }
 
-		stage ('Final') {
+	stage('Deploy') {
+	  java -jar target/EurekaServer-0.0.1-SNAPSHOT.jar
+	
+        }
+
+	stage ('Final') {
             build job: 'config-server-pipeline', wait: false
         }     
     }
